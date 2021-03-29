@@ -1,0 +1,18 @@
+/**
+ * This file should contain all the toggles that change the behavior of the
+ * rdtsc library. This header file will be pre-processed by the build system and
+ * a config.h header file will be placed in the target system upon installing
+ * the library with the correct toggles included.
+ * */
+
+#ifndef LIBRDTSC_CONFIG_H
+#define LIBRDTSC_CONFIG_H
+
+#cmakedefine LIBRDTSC_OS_LINUX
+#cmakedefine LIBRDTSC_ARCH_x86
+#cmakedefine LIBRDTSC_ARCH_ARM
+#cmakedefine LIBRDTSC_ARCH_ARM64
+#cmakedefine LIBRDTSC_USE_HPET
+#cmakedefine LIBRDTSC_USE_PMU
+
+#endif // LIBRDTSC_GENCONFIG_H
