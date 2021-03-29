@@ -12,7 +12,7 @@
 extern "C" {
 #endif // __cplusplus
 
-#include "generic/cycles.h"
+#include <librdtsc/generic/cycles.h>
 
 /** Read generic counter frequency */
 static __always_inline uint64_t __arm64_cntfrq(void) {
@@ -87,7 +87,7 @@ static __always_inline uint64_t rdtsc_precise(void) {
     return rdtsc();
 }
 
-static __always_inline uint64_t get_tsc_cycles(void) {
+static __always_inline uint64_t rdtsc_get_tsc_cycles(void) {
     return rdtsc();
 }
 

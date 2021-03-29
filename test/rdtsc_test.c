@@ -1,5 +1,6 @@
 #include <librdtsc/rdtsc.h>
 #include <stdio.h>
+#include <unistd.h>
 
 int main() {
 
@@ -14,10 +15,10 @@ int main() {
     sleep(1);
     uint64_t tsc_new = rdtsc();
 
-    printf("TSC OLD: %ld\n", tsc_old);
-    printf("TSC NEW: %ld\n", tsc_new);
+    printf("TSC OLD:  %ld\n", tsc_old);
+    printf("TSC NEW:  %ld\n", tsc_new);
     printf("TSC DIFF: %ld\n", tsc_new - tsc_old);
-    printf("TSC HZ: %ld\n", tsc_hz);
+    printf("TSC HZ:   %ld\n", tsc_hz);
 
     return 0;
 }
