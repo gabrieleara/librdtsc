@@ -20,7 +20,7 @@ cmake_minimum_required(VERSION 3.16)
 include(GNUInstallDirs)
 
 # The version of the shared library
-set(LIBRDTSC_VERSION 0.2)
+set(LIBRDTSC_VERSION 0.3)
 set(LIBRDTSC_SOVERSION 0)
 
 project(librdtsc
