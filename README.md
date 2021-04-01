@@ -112,6 +112,10 @@ int main() {
     printf("TSC NEW:  %ld\n", tsc_new);
     printf("TSC DIFF: %ld\n", tsc_new - tsc_old);
     printf("TSC HZ:   %ld\n", tsc_hz);
+    printf("Elapsed time ( s): %ld\n", rdtsc_elapsed_s(tsc_old, tsc_new));
+    printf("Elapsed time (ms): %ld\n", rdtsc_elapsed_ms(tsc_old, tsc_new));
+    printf("Elapsed time (us): %ld\n", rdtsc_elapsed_us(tsc_old, tsc_new));
+    printf("Elapsed time (ns): %ld\n", rdtsc_elapsed_ns(tsc_old, tsc_new));
 
     return 0;
 }
