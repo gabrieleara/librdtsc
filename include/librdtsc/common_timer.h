@@ -10,6 +10,7 @@ extern uint64_t rdtsc_get_tsc_freq();
 extern int rdtsc_init();
 extern void rdtsc_set_tsc_freq();
 extern uint64_t rdtsc_get_tsc_freq();
+extern uint64_t rdtsc_get_tsc_hz();
 
 #define MS_PER_S 1000
 #define US_PER_S 1000000
